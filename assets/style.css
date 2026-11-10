@@ -1,0 +1,38 @@
+/* ---------- Page layout ---------- */
+/* top padding leaves room for Streamlit's header bar */
+.block-container {
+  padding: 3rem 2rem 1rem;
+}
+
+/* ---------- Sidebar ---------- */
+[data-testid="stSidebarUserContent"] {
+  padding-top: 1.5rem;
+}
+
+/* ---------- Diagnosis box (the second column) ---------- */
+[data-testid="stHorizontalBlock"] > [data-testid="stColumn"]:nth-child(2) {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #7e99ab;
+}
+
+/* ---------- Headings ---------- */
+h3 {
+  font-size: 1.5rem;
+}
+
+/* ---------- Diagnosis badge (used in main.py) ---------- */
+.diagnosis {
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.bright-red {
+  background-color: rgb(255, 75, 75);
+}
+
+.bright-green {
+  background-color: #01db4b;
+  color: #000;
+}
